@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoral da Música Sacra - Canto, Fé e Santos Patronos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Cabeçalho Principal -->
+        <header>
+            <span class="tagline">Ministério & Serviço Litúrgico</span>
+            <h1>Pastoral da Música</h1>
+            <p class="lead-text">Servir à comunidade através do canto, unindo técnica musical, espiritualidade profunda e inspiração nos grandes santos patronos.</p>
+        </header>
+
+        <!-- Seção: Funções dos Músicos -->
+        <section class="content-card">
+            <h2>Funções e Papéis no Ministério</h2>
+            <p style="margin-bottom: 20px;">Cada integrante do ministério de música possui um papel específico para garantir a harmonia e a oração da assembleia:</p>
+
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <h3>Salmista</h3>
+                    <p>Proclama a Palavra de Deus através do Salmo Responsorial no Ambão. Sua execução deve ser clara, meditativa e orante.</p>
+                </div>
+                <div class="pillar-item">
+                    <h3>Cantor / Animador</h3>
+                    <p>Sustenta e conduz o canto da assembleia sem sobrepor a sua voz, servindo como ponte de oração para a comunidade.</p>
+                </div>
+                <div class="pillar-item">
+                    <h3>Instrumentista</h3>
+                    <p>Oferece a base harmônica e o ritmo. Mantém o volume adequado aos momentos de silêncio, vibração ou recolhimento.</p>
+                </div>
+                <div class="pillar-item">
+                    <h3>Regente / Coordenador</h3>
+                    <p>Harmoniza vozes e instrumentos, planeja o repertório com a equipe de liturgia e cuida da formação do grupo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Santos Patronos da Música -->
+        <section class="content-card">
+            <h2>Santos Patronos da Música</h2>
+            <p style="margin-bottom: 20px;">Ao longo da história da Igreja, santos se destacaram por sua devoção à música sacra, inspirando compositores e ministérios até os dias de hoje:</p>
+
+            <div class="saints-grid">
+                <!-- Santa Cecília -->
+                <div class="saint-card">
+                    <img src="mulher.webp" alt="Santa Cecília" class="saint-img">
+                    <div class="saint-info">
+                        <h3>Santa Cecília</h3>
+                        <span class="saint-title">Padroeira dos Músicos</span>
+                        <p>Mártir romana dos primeiros séculos. Diz a tradição que, enquanto os instrumentos ressoavam em seu casamento, ela cantava a Deus em seu coração.</p>
+                    </div>
+                </div>
+
+                <!-- São Gregório Magno -->
+                <div class="saint-card">
+                    <img src="santo.jpg" alt="São Gregório Magno" class="saint-img">
+                    <div class="saint-info">
+                        <h3>São Gregório Magno</h3>
+                        <span class="saint-title">Organizador do Canto Gregoriano</span>
+                        <p>Papa e Doutor da Igreja que unificou e organizou os cantos da liturgia romana, dando origem ao célebre Canto Gregoriano.</p>
+                    </div>
+                </div>
+
+                <!-- Santo Agostinho -->
+                <div class="saint-card">
+                    <img src="agostinho.jpg" alt="Santo Agostinho" class="saint-img">
+                    <div class="saint-info">
+                        <h3>Santo Agostinho</h3>
+                        <span class="saint-title">Doutor da Graça</span>
+                        <p>Autor da famosa frase "Quem canta, reza duas vezes". Escreveu extensamente sobre a beleza e o poder espiritual do canto sacro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Essência -->
+        <section class="content-card">
+            <h2>A Missão do Músico Sacro</h2>
+            <p>A música na Igreja não é um plano de fundo nem um show particular: é oração encarnada. O objetivo da Pastoral é conduzir a assembleia a viver profundamente a celebração.</p>
+
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <h3>1. Oração Interna</h3>
+                    <p>O músico precisa vivenciar a mensagem do canto antes de transmiti-la com os lábios ou instrumentos.</p>
+                </div>
+                <div class="pillar-item">
+                    <h3>2. Zelo Técnico</h3>
+                    <p>Ensaios dedicados e busca constante por afinação e harmonia para oferecer o melhor ao serviço de Deus.</p>
+                </div>
+                <div class="pillar-item">
+                    <h3>3. Serviço Comunitário</h3>
+                    <p>Ajustar o tom e o volume para dar voz à comunidade, e não se sobrepor a ela.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Interativa (Quiz) -->
+        <section class="quiz-card">
+            <h2>Teste Seus Conhecimentos</h2>
+            <p class="quiz-intro">Responda às 4 perguntas abaixo para conferir seu entendimento sobre as diretrizes, funções e patronos da música:</p>
+
+            <!-- Pergunta 1 -->
+            <div class="question-block" id="q1">
+                <div class="question-title">1. Quem é reconhecida tradicionalmente como a Padroeira dos Músicos?</div>
+                <div class="options-group">
+                    <button class="option-btn" onclick="checkAnswer('q1', 0, false)">A) Santa Teresa de Ávila</button>
+                    <button class="option-btn" onclick="checkAnswer('q1', 1, true)">B) Santa Cecília</button>
+                    <button class="option-btn" onclick="checkAnswer('q1', 2, false)">C) Santa Clara de Assis</button>
+                </div>
+                <div class="feedback-text" id="q1-feedback"></div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="question-block" id="q2">
+                <div class="question-title">2. Qual Papa e Doutor da Igreja organizou o repertório que deu origem ao Canto Gregoriano?</div>
+                <div class="options-group">
+                    <button class="option-btn" onclick="checkAnswer('q2', 0, false)">A) São Pedro</button>
+                    <button class="option-btn" onclick="checkAnswer('q2', 1, false)">B) São João Paulo II</button>
+                    <button class="option-btn" onclick="checkAnswer('q2', 2, true)">C) São Gregório Magno</button>
+                </div>
+                <div class="feedback-text" id="q2-feedback"></div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="question-block" id="q3">
+                <div class="question-title">3. A quem é atribuída a célebre frase "Quem canta, reza duas vezes"?</div>
+                <div class="options-group">
+                    <button class="option-btn" onclick="checkAnswer('q3', 0, true)">A) Santo Agostinho</button>
+                    <button class="option-btn" onclick="checkAnswer('q3', 1, false)">B) São Francisco de Assis</button>
+                    <button class="option-btn" onclick="checkAnswer('q3', 2, false)">C) São Bento</button>
+                </div>
+                <div class="feedback-text" id="q3-feedback"></div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="question-block" id="q4">
+                <div class="question-title">4. Qual é a função principal do Salmista na celebração litúrgica?</div>
+                <div class="options-group">
+                    <button class="option-btn" onclick="checkAnswer('q4', 0, false)">A) Reger o coral e marcar o ritmo dos instrumentos</button>
+                    <button class="option-btn" onclick="checkAnswer('q4', 1, true)">B) Proclamar a Palavra de Deus cantando o Salmo Responsorial no Ambão</button>
+                    <button class="option-btn" onclick="checkAnswer('q4', 2, false)">C) Fazer os avisos da comunidade ao final da missa</button>
+                </div>
+                <div class="feedback-text" id="q4-feedback"></div>
+            </div>
+
+            <!-- Resultado -->
+            <div class="score-box" id="score-box">
+                <h3 id="score-title">Resultado</h3>
+                <p id="score-desc"></p>
+            </div>
+        </section>
+
+        
+
+    </div>
+
+    <!-- JavaScript Interativo -->
+    <script>
+        const answersState = { q1: null, q2: null, q3: null, q4: null };
+
+        function checkAnswer(qId, optionIdx, isCorrect) {
+            if (answersState[qId] !== null) return;
+
+            answersState[qId] = isCorrect;
+            const container = document.getElementById(qId);
+            const buttons = container.querySelectorAll('.option-btn');
+            const feedback = document.getElementById(qId + '-feedback');
+
+            buttons.forEach((btn, idx) => {
+                btn.disabled = true;
+                btn.style.cursor = 'default';
+                if (idx === optionIdx) {
+                    btn.classList.add(isCorrect ? 'selected-correct' : 'selected-wrong');
+                }
+            });
+
+            if (isCorrect) {
+                feedback.textContent = '✓ Resposta correta!';
+                feedback.className = 'feedback-text correct';
+            } else {
+                feedback.textContent = '✕ Incorreto. Confira as seções informativas acima para relembrar!';
+                feedback.className = 'feedback-text wrong';
+            }
+
+            checkTotalScore();
+        }
+
+        function checkTotalScore() {
+            const keys = Object.keys(answersState);
+            const allAnswered = keys.every(k => answersState[k] !== null);
+
+            if (allAnswered) {
+                const totalCorrect = keys.filter(k => answersState[k] === true).length;
+                const scoreBox = document.getElementById('score-box');
+                const scoreTitle = document.getElementById('score-title');
+                const scoreDesc = document.getElementById('score-desc');
+
+                scoreBox.style.display = 'block';
+                if (totalCorrect === 4) {
+                    scoreTitle.textContent = '🌟 Excelente! (4/4)';
+                    scoreDesc.textContent = 'Você domina as funções dos músicos e a história dos patronos da música sacra!';
+                } else if (totalCorrect >= 2) {
+                    scoreTitle.textContent = '👍 Muito Bom! (' + totalCorrect + '/4)';
+                    scoreDesc.textContent = 'Você tem um bom conhecimento geral sobre o ministério de música.';
+                } else {
+                    scoreTitle.textContent = '📖 Vale a pena revisar! (' + totalCorrect + '/4)';
+                    scoreDesc.textContent = 'Aproveite o conteúdo dos cards acima para reforçar o aprendizado.';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
